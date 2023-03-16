@@ -1,0 +1,276 @@
+h2 {
+    text-align: center;
+}
+
+body {
+    background: #e0e0e0;
+}
+
+.description {
+    font-size: 14pt;
+}
+
+.menu {
+    /* border-radius: 50px; */
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 40px #bebebe,
+        -15px -15px 40px #ffffff;
+    color: black;
+    height: 100%;
+}
+
+.navbar {
+    background: #e0e0e0;
+    width: 100%;
+}
+
+.card {
+    background: #e0e0e0;
+    box-shadow: 15px 15px 40px #bebebe,
+        -15px -15px 40px #ffffff;
+    border: 0;
+}
+
+img {
+    width: 100%;
+    vertical-align: center;
+}
+
+.poster {
+    padding: 0;
+    vertical-align: middle !important;
+    display: table-cell !important;
+}
+
+.poster-img {
+    display: inline-block;
+}
+
+.pagination {
+    padding-left: 30px;
+}
+
+.nav-menu a {
+    display: block;
+    padding: 5px 0;
+    color: #8fa7c6;
+}
+
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.form-inline .form-control {
+    width: 89% !important;
+}
+
+.form-inline {
+    width: 100%;
+}
+
+.nav-col {
+    width: 55%;
+}
+
+.carousel {
+    height: 250px !important;
+}
+
+.carousel-inner img {
+    height: 240px !important;
+    width: auto;
+    margin: 0 auto;
+}
+
+@media (min-width: 1100px) {
+
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active+.carousel-item,
+    .carousel-inner .active+.carousel-item+.carousel-item,
+    .carousel-inner .active+.carousel-item+.carousel-item+.carousel-item {
+        display: block;
+    }
+
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item+.carousel-item {
+        transition: none;
+    }
+
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+
+    .carousel-inner .active.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+
+    /* left or forward direction */
+    .active.carousel-item-left+.carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left+.carousel-item,
+    .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item,
+    .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item,
+    .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+
+    /* right or prev direction */
+    .active.carousel-item-right+.carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right+.carousel-item,
+    .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item,
+    .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item,
+    .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+
+    .carousel {
+        height: 450px;
+    }
+
+    .carousel-inner img {
+        height: 400px;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active+.carousel-item,
+    .carousel-inner .active+.carousel-item+.carousel-item,
+    .carousel-inner .active+.carousel-item+.carousel-item+.carousel-item {
+        display: block;
+    }
+
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item+.carousel-item {
+        transition: none;
+    }
+
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+
+    .carousel-inner .active.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+
+    /* left or forward direction */
+    .active.carousel-item-left+.carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left+.carousel-item,
+    .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item,
+    .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item,
+    .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+
+    /* right or prev direction */
+    .active.carousel-item-right+.carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right+.carousel-item,
+    .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item,
+    .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item,
+    .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+
+
+
+}
+
+/* Bootstrap Lightbox using Modal */
+
+#profile-grid {
+    overflow: auto;
+    white-space: normal;
+}
+
+#profile-grid .profile {
+    padding-bottom: 40px;
+}
+
+#profile-grid .panel {
+    padding: 0
+}
+
+#profile-grid .panel-body {
+    padding: 15px
+}
+
+#profile-grid .profile-name {
+    font-weight: bold;
+}
+
+#profile-grid .thumbnail {
+    margin-bottom: 6px;
+}
+
+#profile-grid .panel-thumbnail {
+    overflow: hidden;
+}
+
+#profile-grid .img-rounded {
+    border-radius: 4px 4px 0 0;
+}
+
+/* .page-item {
+    background: rgb(133, 133, 133);
+} */
+
+/* img{
+    object-fit: cover;
+    width: 100px;
+    height: 400px;
+} */

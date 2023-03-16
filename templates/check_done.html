@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="mt-5">Результат</h1>
+
+<div class="row g-3  mt-3">
+  <div class='col-sm-5'>
+    <img class="img-fluid mx-auto d-block" src="{{url_for('static',filename=output_img)}}">
+  </div>
+  <p class='col-sm-4'>
+    Дата формирования: {{date}}<br />
+    Время обработки: {{time_use}}<br />
+  </p>
+  <div class='col-sm-9 mt-3'>
+    <a href="{{back_ref}}"><button class="w-100 btn btn-danger btn-lg" type="submit">Назад</button></a>
+  </div>
+</div>
+</div>
+</form>
+<script src='{{url_for("static",filename="form-validation.js")}}'></script>
+{% endblock %}

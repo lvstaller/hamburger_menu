@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="mt-5">Ошибка</h1>
+
+<div class="row g-3  mt-3">
+    <h3 class='col-sm-9'>
+        Python: {{details}}
+    </h3>
+    <div class='col-sm-9 mt-3'>
+        <a href="/"><button class="w-100 btn btn-danger btn-lg" type="submit">Назад</button></a>
+    </div>
+</div>
+</div>
+</form>
+<script src='{{url_for("static",filename="form-validation.js")}}'></script>
+{% endblock %}
